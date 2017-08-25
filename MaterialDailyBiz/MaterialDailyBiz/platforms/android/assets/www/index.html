@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html>
+<html class="mdc-typography">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+      <link href="css/material.min.css" rel="stylesheet" />
+      <link href="css/bottomsheet.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+      <link href="css/icons.css" rel="stylesheet" />
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+      <script src="js/jquery-1.8.0.min.js"></script>
+
+      
+    <!--For users deploying their apps to Windows 8.1 or Android Gingerbread, platformOverrided.js
+    will inject platform-specific code from the /merges folder -->
+    <script src="js/platformOverrides.js"></script>
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+      <style>
+          .demo-body {
+              padding: 0;
+              margin: 0;
+              box-sizing: border-box;
+          }
+
+          .demo-main {
+              padding-left: 16px;
+              overflow: auto;
+          }
+      </style>
+  </head>
+<body class="mdc-typography demo-body platform-android platform-cordova platform-webview">
+
+    <!----------------------------Home Page---------------------------------------------------------------------------------------->
+
+    <div id="Home">
+        <div class="mdc-toolbar mdc-toolbar--fixed fixstatusbar">
+            <div class="mdc-toolbar__row tabheader">
+                <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                    <button class="demo-menu material-icons mdc-toolbar__icon--menu">menu</button>
+                    <span class="mdc-toolbar__title catalog-title titleadjust">Home</span>
+                    <span class="mdc-tab-bar__indicator"></span>
+                    
+                </section>
+                <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
+                    <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Download" alt="Download">file_download</a>
+                    <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Print this page" alt="Print this page">print</a>
+                    <a class="material-icons mdc-toolbar__icon mdc-button--primary toggle" aria-label="Bookmark this page" alt="Bookmark this page">more_vert</a>
+                </section>
+                <nav id="basic-tab-bar" class="mdc-tab-bar icontabs">
+                    <a class="mdc-tab mdc-tab--active"  id="tabToday" >Today's Entry</a>
+                    <a class="mdc-tab" id="tabMonth" >Monthly Report</a>
+                </nav>
+            </div>
+        </div>
+        <div class="mdc-simple-menu menuposition" tabindex="-1" id="demo-menu">
+            <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
+                <li class="mdc-list-item" role="menuitem" tabindex="0">Add Customer</li>
+                <li class="mdc-list-item" role="menuitem" tabindex="0">Add Vendor</li>
+                <li class="mdc-list-item" role="menuitem" tabindex="0">Add Lavendor</li>
+                <li class="mdc-list-divider" role="separator"></li>
+
+                <li class="mdc-list-item" role="menuitem" tabindex="0">Add Expense Category</li>
+            </ul>
+        </div>
+        <aside class="mdc-temporary-drawer tempdrawerup">
+            <nav class="mdc-temporary-drawer__drawer">
+                <header class="mdc-temporary-drawer__header">
+
+                    
+                    <div class="mdc-temporary-drawer__header-content mdc-theme--primary-bg mdc-theme--text-primary-on-primary bgside">
+
+                        Dinesh Kumar
+
+                    </div>
+                </header>
+
+                <nav class="mdc-temporary-drawer__content mdc-list-group">
+                    <div id="icon-with-text-demo" class="mdc-list">
+                        <a class="mdc-list-item mdc-temporary-drawer--selected" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Sales
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Customer's Credit
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Vendor's Balance
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Short Loan
+                        </a>
+                    </div>
+
+                    <hr class="mdc-list-divider">
+
+                    <div class="mdc-list">
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">email</i>Expenses
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">delete</i>Payement
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">report</i>Purchases
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">report</i>Investment
+                        </a>
+                        <hr class="mdc-list-divider">
+
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">report</i>Daily Report
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">report</i>Monthly Report
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">report</i>Contact Us
+                        </a>
+                    </div>
+                </nav>
+            </nav>
+        </aside>
+        class="demo-main mdc-toolbar-fixed-adjust"   removed
+        <main class="mainpanel">
+            <div id='mySwipe' class='swipe'>
+                <div class='swipe-wrap'>
+                    <div id="today">
+                        <div class="mdc-card my-card-container">
+                            <section class="mdc-card__primary">
+                                <h1 class="mdc-card__title mdc-card__title--large">Today's Tab1</h1>
+                                <h2 class="mdc-card__subtitle">Subtitle here</h2>
+                            </section>
+                            <section class="mdc-card__supporting-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat.
+                            </section>
+                            <section class="mdc-card__actions">
+                                <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+                                <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+                            </section>
+                        </div>
+                    </div>
+                    <div id="month">
+                        
+                        <div class="mdc-card my-card-container">
+                            <section class="mdc-card__primary">
+                                <h1 class="mdc-card__title mdc-card__title--large">Month's Tab1</h1>
+                                <h2 class="mdc-card__subtitle">Subtitle here</h2>
+                            </section>
+                            <section class="mdc-card__supporting-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat.
+                            </section>
+                            <section class="mdc-card__actions">
+                                <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+                                <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+                            </section>
+                        </div>
+                        <div class="mdc-card my-card-container">
+                            <section class="mdc-card__primary">
+                                <h1 class="mdc-card__title mdc-card__title--large">Month's Tab2</h1>
+                                <h2 class="mdc-card__subtitle">Subtitle here</h2>
+                            </section>
+                            <section class="mdc-card__supporting-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat.
+                            </section>
+                            <section class="mdc-card__actions">
+                                <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+                                <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+                            </section>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <a class="mdc-fab material-icons plus" href="#bottom-sheet" aria-label="Favorite">
+                <span class="mdc-fab__icon plusposition">
+                    create
+                </span>
+            </a>
+            <footer>
+                <div class="wrap">
+                </div>
+            </footer>
+            <div id="bottom-sheet" class="overlay">
+                <aside class="social" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+                    <section class="mdc-card__primary">
+                        <h2 class="mdc-card__title mdc-card__title--large">Daily Entry</h2>
+                        
+                    </section>
+                    <div id="icon-with-text-demo" class="mdc-list">
+                        <a class="mdc-list-item mdc-temporary-drawer--selected" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Add Payement
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Add Purchase
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Add Short Loan
+                        </a>
+                        <a class="mdc-list-item" data-transition="slide" id="BtnAddExpense" href="#">
+                            <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Add Expenses
+                        </a>
+                    </div>
+                </aside>
+                <a href="#close" class="btn-close" aria-hidden="true"><span class="mdi mdi-close"></span><span class="sr-only">Close</span></a>
+            </div>
+
+
+
+
+
+        </main>
+    </div>
+
+   <!----------------------------Add Expense page---------------------------------------------------------------------------------------->
+
+    <div id="AddExpense" >
+        <header class="mdc-toolbar mdc-toolbar--fixed">
+            <div class="mdc-toolbar__row">
+                <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                    <a href="#" id="AddExpenseBackHome" data-transition="slide" class="material-icons mdc-toolbar__icon--menu toolbarbackfix">arrow_back</a>
+                    <span class="mdc-toolbar__title toolbarfixwidth">Add Expenses</span>
+                </section>
+                <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
+                    <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Download" alt="Download">dns</a>
+                </section>
+            </div>
+        </header>
+        <main class="Fixmainposition">
+            <div class="mdc-textfield">
+                <input type="text" id="my-textfield" class="mdc-textfield__input ">
+                <label class="mdc-textfield__label" for="my-textfield">Expense Name</label>
+            </div>
+            <div class="mdc-textfield">
+                <input type="number" id="my-textfield" class="mdc-textfield__input ">
+                <label class="mdc-textfield__label" for="my-textfield">Expense Amount</label>
+            </div>
+        </main>
+    </div>
+    
+    <script src="js/material.js"></script>
+
+    <script>
+      var drawerEl = document.querySelector('.mdc-temporary-drawer');
+      var MDCTemporaryDrawer = mdc.drawer.MDCTemporaryDrawer;
+      var drawer = new MDCTemporaryDrawer(drawerEl);
+      document.querySelector('.demo-menu').addEventListener('click', function() {
+        drawer.open = true;
+      });
+      drawerEl.addEventListener('MDCTemporaryDrawer:open', function() {
+        console.log('Received MDCTemporaryDrawer:open');
+      });
+      drawerEl.addEventListener('MDCTemporaryDrawer:close', function() {
+        console.log('Received MDCTemporaryDrawer:close');
+      });
+      var menuEl = document.querySelector('#demo-menu');
+      var menu = new mdc.menu.MDCSimpleMenu(menuEl);
+      var toggle = document.querySelector('.toggle');
+      toggle.addEventListener('click', function () {
+          menu.open = !menu.open;
+      });
+    </script>
+    
+    <script src="js/swipe.js"></script>
+    
+    <script>
+
+// pure JS
+var elem = document.getElementById('mySwipe');
+window.mySwipe = Swipe(elem, {
+  // startSlide: 4,
+  // auto: 3000,
+  // continuous: true,
+  // disableScroll: true,
+  // stopPropagation: true,
+  // callback: function(index, element) {},
+  // transitionEnd: function(index, element) {}
+});
+        
+// with jQuery
+        // window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
+
+    </script>
+    <script>
+        (function () {
+            var tfs = document.querySelectorAll(
+              '.mdc-textfield:not([data-demo-no-auto-js])'
+            );
+            for (var i = 0, tf; tf = tfs[i]; i++) {
+                mdc.textfield.MDCTextfield.attachTo(tf);
+            }
+        })();
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#tabMonth").click(function () {
+                $("#tabMonth").addClass("mdc-tab--active");
+                $("#tabToday").removeClass("mdc-tab--active");
+                
+               mySwipe.slide(1);
+                
+
+            });
+            $("#tabToday").click(function () {
+                $("#tabMonth").removeClass("mdc-tab--active");
+                $("#tabToday").addClass("mdc-tab--active");
+                
+                mySwipe.slide(0);
+            });
+            $(".mySwipe").on("swipe", function (event) {
+                if (mySwipe.getPos() == 1) {
+                    alert("Month");
+                    $("#tabMonth").addClass("mdc-tab--active");
+                    $("#tabToday").removeClass("mdc-tab--active");
+                }
+                if (mySwipe.getPos() == 0) {
+                    alert("Day");
+                    $("#tabMonth").removeClass("mdc-tab--active");
+                    $("#tabToday").addClass("mdc-tab--active");
+                }
+
+            });
+            
+            $("#AddExpense").hide();
+            $("#BtnAddExpense").click(function () {
+                $("#Home").hide();
+                $("#AddExpense").show();
+            });
+            $("#AddExpenseBackHome").click(function () {
+                $("#Home").show();
+                $("#AddExpense").hide();
+            });
+        });
+    </script>
+</body>
+</html>

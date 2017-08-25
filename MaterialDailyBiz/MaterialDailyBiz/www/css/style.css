@@ -1,0 +1,115 @@
+﻿/* Empty. Add your own CSS if you like */
+.owner {
+    position:relative;
+     font-family:Roboto;
+    top:-17px;
+    font: medium 14px roboto;
+}
+.firm {
+    position: absolute;
+    font: lighter 14px roboto;
+}
+    
+.bgside{
+    background-image:url("../img/4-3.jpg");
+    background-size:cover;
+}    
+.menuposition {
+    position: fixed; 
+    overflow:visible;
+    top:60px;
+    right:10px;
+    
+}
+.my-card-container{
+  
+  width: 95%;
+  margin-top:10px;
+}
+body {
+    -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+.tabheader{
+    height:100px;
+}
+.icontabs {
+    padding-top:50px;
+    
+}
+.mainpanel {
+    padding-top:60px;
+}
+.tempdrawerup
+{
+    z-index:100;
+}
+.titleadjust {
+position:absolute;
+top:0px;
+left:40px;
+}
+#console {
+  overflow: auto;
+}
+
+#mySwipe div b {
+  display:block;
+ 
+}
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+.plus 
+{
+    position:fixed;
+    bottom:20px;
+    right:10px;
+}
+.plusposition {
+    position:relative;
+    padding-top:10px;
+}
+.fixstatusbar {
+    border-top:none;
+}
+.alignaddtxt {
+    position:absolute;
+    bottom:10px;
+}
+.toolbarfixwidth {
+    
+    position:absolute;
+    padding-left:40px;
+    width:160px;
+}
+.toolbarbackfix {
+   z-index:2;
+}
+.Fixmainposition {
+    padding-top:60px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.mdc-textfield {
+    min-width: 90%;
+}
+.mdc-card  {
+    margin-left:10px;
+}
